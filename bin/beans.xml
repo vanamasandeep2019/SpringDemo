@@ -20,6 +20,8 @@
    
     <bean id="cricketCoach" class="injection.CricketCoach">
    		<property name="fortuneService" ref="fortuneService"></property>
+   		<property name="emailAddress" value="india@gmail.com"></property>
+   		<property name="team" value="Sunrisers Hyderabad"></property>
    </bean>
 
 </beans>
