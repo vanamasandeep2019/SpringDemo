@@ -19,6 +19,9 @@ public class MyApp {
 		
 		Coach trackCoach=context.getBean("myTrackCoach",Coach.class);
 		System.out.println(trackCoach.getDailyWorkout());
+		
+		Coach cricketCoach=context.getBean("cricketCoach",Coach.class);
+		System.out.println(cricketCoach.getFortuneService());
 	}
 
 }

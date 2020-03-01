@@ -16,7 +16,10 @@
    <bean id="fortuneService" class="injection.HappyFortuneService"></bean>
    
    <bean id="myTrackCoach" class="injection.TrackCoach">
+   </bean>
    
+    <bean id="cricketCoach" class="injection.CricketCoach">
+   		<property name="fortuneService" ref="fortuneService"></property>
    </bean>
 
 </beans>
