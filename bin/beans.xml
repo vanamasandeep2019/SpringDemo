@@ -9,10 +9,13 @@
       <property name = "message" value = "Hello World!"/>
    </bean>
    
-   <bean id="myCoach" class="helloworld.BaseBallCoach">
+   <bean id="myCoach" class="injection.BaseBallCoach">
+   <constructor-arg ref="fortuneService"></constructor-arg>
    </bean>
    
-   <bean id="myTrackCoach" class="helloworld.TrackCoach">
+   <bean id="fortuneService" class="injection.HappyFortuneService"></bean>
+   
+   <bean id="myTrackCoach" class="injection.TrackCoach">
    
    </bean>
 

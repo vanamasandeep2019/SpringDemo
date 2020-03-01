@@ -1,4 +1,4 @@
-package helloworld;
+package injection;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -15,6 +15,7 @@ public class MyApp {
 		
 		Coach coach=context.getBean("myCoach",Coach.class);
 		System.out.println(coach.getDailyWorkout());
+		System.out.println(coach.getFortuneService());
 		
 		Coach trackCoach=context.getBean("myTrackCoach",Coach.class);
 		System.out.println(trackCoach.getDailyWorkout());
