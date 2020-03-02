@@ -2,7 +2,7 @@ package injection;
 
 import org.springframework.stereotype.Component;
 
-@Component("tenniscoach")
+@Component
 public class TennisCoach implements Coach{
 
 	@Override
